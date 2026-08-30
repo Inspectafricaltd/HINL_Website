@@ -1,0 +1,444 @@
+const fs = require('fs');
+
+const page = {
+  title: "Diaspora",
+  status: "publish",
+  page_settings: {
+    background_background: "classic",
+    background_color: "#121415",
+    custom_css: "body { background-color: #121415; color: #e2e2e3; }"
+  },
+  structure: [
+    {
+      type: "container",
+      settings: {
+        content_width: "full",
+        min_height: { size: 921, unit: "px" },
+        background_background: "classic",
+        background_image: { id: 1668, url: "https://www.homeinspectors.ng/wp-content/uploads/2024/12/DSC06174-scaled.jpg" },
+        background_overlay_background: "gradient",
+        background_overlay_color: "#121415",
+        background_overlay_color_b: "rgba(18, 20, 21, 0)",
+        background_overlay_gradient_angle: { size: 180, unit: "deg" },
+        justify_content: "center",
+        align_items: "flex-start",
+        padding: { unit: "px", top: "100", right: "50", bottom: "100", left: "50", isLinked: false }
+      },
+      children: [
+        {
+          type: "widget",
+          widget_type: "heading",
+          settings: {
+            title: "Peace of Mind for Your <span style='color: #65B32E'>Investments</span> in Nigeria.",
+            typography_typography: "custom",
+            typography_font_family: "Manrope",
+            typography_font_weight: "800",
+            typography_font_size: { size: 60, unit: "px" },
+            title_color: "#ffffff"
+          }
+        },
+        {
+          type: "widget",
+          widget_type: "text-editor",
+          settings: {
+            editor: "Wherever you are in the world, HINL acts as your eyes and ears on the ground. Professional auditing for the global Nigerian.",
+            typography_typography: "custom",
+            typography_font_family: "Inter",
+            typography_font_size: { size: 20, unit: "px" },
+            text_color: "#e2e2e3"
+          }
+        },
+        {
+          type: "container",
+          settings: {
+            flex_direction: "row",
+            gap: { size: 20, unit: "px" }
+          },
+          children: [
+            {
+              type: "widget",
+              widget_type: "button",
+              settings: {
+                text: "Secure Your Investment Today",
+                background_color: "#65B32E",
+                text_color: "#ffffff",
+                border_radius: { unit: "px", top: "30", right: "30", bottom: "30", left: "30", isLinked: true }
+              }
+            },
+            {
+              type: "widget",
+              widget_type: "button",
+              settings: {
+                text: "View Case Studies",
+                background_color: "transparent",
+                text_color: "#ffffff",
+                border_border: "solid",
+                border_width: { unit: "px", top: "2", right: "2", bottom: "2", left: "2", isLinked: true },
+                border_color: "#ffffff",
+                border_radius: { unit: "px", top: "30", right: "30", bottom: "30", left: "30", isLinked: true }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      type: "container",
+      settings: {
+        background_color: "#1a1c1d",
+        padding: { unit: "px", top: "80", right: "50", bottom: "80", left: "50", isLinked: false }
+      },
+      children: [
+        {
+          type: "widget",
+          widget_type: "heading",
+          settings: {
+            title: "Core Diaspora Protections",
+            typography_typography: "custom",
+            typography_font_family: "Manrope",
+            title_color: "#ffffff"
+          }
+        },
+        {
+          type: "container",
+          settings: {
+            flex_direction: "row",
+            gap: { size: 30, unit: "px" }
+          },
+          children: [
+            {
+              type: "container",
+              settings: {
+                background_color: "#1e2021",
+                padding: { unit: "px", top: "30", "right": "30", "bottom": "30", left: "30", isLinked: true },
+                border_radius: { unit: "px", top: "15", right: "15", bottom: "15", left: "15", isLinked: true }
+              },
+              children: [
+                {
+                  type: "widget",
+                  widget_type: "html",
+                  settings: {
+                    html: "<span class='material-symbols-outlined' style='color:#65B32E;font-size:40px;'>visibility</span>"
+                  }
+                },
+                {
+                  type: "widget",
+                  widget_type: "heading",
+                  settings: { title: "Remote Monitoring", title_color: "#ffffff" }
+                },
+                {
+                  type: "widget",
+                  widget_type: "text-editor",
+                  settings: { editor: "Real-time updates on your property.", text_color: "#c2c8bb" }
+                }
+              ]
+            },
+            {
+              type: "container",
+              settings: {
+                background_color: "#1e2021",
+                padding: { unit: "px", top: "30", "right": "30", "bottom": "30", left: "30", isLinked: true },
+                border_radius: { unit: "px", top: "15", right: "15", bottom: "15", left: "15", isLinked: true }
+              },
+              children: [
+                {
+                  type: "widget",
+                  widget_type: "html",
+                  settings: {
+                    html: "<span class='material-symbols-outlined' style='color:#65B32E;font-size:40px;'>gavel</span>"
+                  }
+                },
+                {
+                  type: "widget",
+                  widget_type: "heading",
+                  settings: { title: "Legal Verification", title_color: "#ffffff" }
+                },
+                {
+                  type: "widget",
+                  widget_type: "text-editor",
+                  settings: { editor: "Verify land titles and documents.", text_color: "#c2c8bb" }
+                }
+              ]
+            },
+            {
+              type: "container",
+              settings: {
+                background_color: "#1e2021",
+                padding: { unit: "px", top: "30", "right": "30", "bottom": "30", left: "30", isLinked: true },
+                border_radius: { unit: "px", top: "15", right: "15", bottom: "15", left: "15", isLinked: true }
+              },
+              children: [
+                {
+                  type: "widget",
+                  widget_type: "html",
+                  settings: {
+                    html: "<span class='material-symbols-outlined' style='color:#65B32E;font-size:40px;'>architecture</span>"
+                  }
+                },
+                {
+                  type: "widget",
+                  widget_type: "heading",
+                  settings: { title: "Construction Audits", title_color: "#ffffff" }
+                },
+                {
+                  type: "widget",
+                  widget_type: "text-editor",
+                  settings: { editor: "Quality checks during building.", text_color: "#c2c8bb" }
+                }
+              ]
+            },
+            {
+              type: "container",
+              settings: {
+                background_color: "#1e2021",
+                padding: { unit: "px", top: "30", "right": "30", "bottom": "30", left: "30", isLinked: true },
+                border_radius: { unit: "px", top: "15", right: "15", bottom: "15", left: "15", isLinked: true }
+              },
+              children: [
+                {
+                  type: "widget",
+                  widget_type: "html",
+                  settings: {
+                    html: "<span class='material-symbols-outlined' style='color:#65B32E;font-size:40px;'>home_repair_service</span>"
+                  }
+                },
+                {
+                  type: "widget",
+                  widget_type: "heading",
+                  settings: { title: "Property Maintenance", title_color: "#ffffff" }
+                },
+                {
+                  type: "widget",
+                  widget_type: "text-editor",
+                  settings: { editor: "Ongoing care for your estate.", text_color: "#c2c8bb" }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      type: "container",
+      settings: {
+        padding: { unit: "px", top: "80", right: "50", bottom: "80", left: "50", isLinked: false },
+        flex_direction: "row",
+        align_items: "center"
+      },
+      children: [
+        {
+          type: "container",
+          settings: {
+            width: "50%"
+          },
+          children: [
+             {
+               type: "widget",
+               widget_type: "image",
+               settings: {
+                 image: { id: 2836, url: "https://www.homeinspectors.ng/wp-content/uploads/2026/02/WhatsApp-Image-2026-01-27-at-8.42.14-PM-e1770911886573.jpeg" },
+                 border_radius: { unit: "px", top: "20", right: "20", bottom: "20", left: "20", isLinked: true }
+               }
+             }
+          ]
+        },
+        {
+          type: "container",
+          settings: {
+            width: "50%",
+            padding: { unit: "px", top: "0", right: "0", bottom: "0", left: "50", isLinked: false }
+          },
+          children: [
+             {
+               type: "widget",
+               widget_type: "heading",
+               settings: {
+                 title: "Designed for the <span style='color:#65B32E;font-style:italic'>Global Citizen</span>",
+                 title_color: "#ffffff",
+                 typography_typography: "custom",
+                 typography_font_family: "Manrope",
+                 typography_font_size: { size: 40, unit: "px" }
+               }
+             },
+             {
+               type: "widget",
+               widget_type: "text-editor",
+               settings: {
+                 editor: "We provide tools and features designed specifically for individuals living abroad who want to stay close to their investments.",
+                 text_color: "#e2e2e3"
+               }
+             },
+             {
+                type: "widget",
+                widget_type: "html",
+                settings: {
+                  html: "<div style='display:flex;align-items:center;margin-top:20px'><span class='material-symbols-outlined' style='color:#65B32E;font-size:30px;margin-right:15px'>360</span><h3 style='color:#fff;margin:0;font-size:18px'>Virtual 360 Walkthroughs</h3></div>"
+                }
+             },
+             {
+                type: "widget",
+                widget_type: "html",
+                settings: {
+                  html: "<div style='display:flex;align-items:center;margin-top:20px'><span class='material-symbols-outlined' style='color:#65B32E;font-size:30px;margin-right:15px'>live_tv</span><h3 style='color:#fff;margin:0;font-size:18px'>Live Video Inspections</h3></div>"
+                }
+             },
+             {
+                type: "widget",
+                widget_type: "html",
+                settings: {
+                  html: "<div style='display:flex;align-items:center;margin-top:20px'><span class='material-symbols-outlined' style='color:#65B32E;font-size:30px;margin-right:15px'>cloud_done</span><h3 style='color:#fff;margin:0;font-size:18px'>Secure Digital Vault</h3></div>"
+                }
+             }
+          ]
+        }
+      ]
+    },
+    {
+      type: "container",
+      settings: {
+        background_color: "#0d0f10",
+        padding: { unit: "px", top: "100", right: "50", bottom: "100", left: "50", isLinked: false },
+        align_items: "center",
+        justify_content: "center"
+      },
+      children: [
+        {
+           type: "widget",
+           widget_type: "heading",
+           settings: {
+             title: "THE STANDARD OF EXCELLENCE",
+             title_color: "#65B32E",
+             typography_typography: "custom",
+             typography_font_size: { size: 14, unit: "px" },
+             typography_letter_spacing: { size: 2, unit: "px" }
+           }
+        },
+        {
+           type: "widget",
+           widget_type: "heading",
+           settings: {
+             title: "Verified Authority",
+             title_color: "#ffffff",
+             typography_typography: "custom",
+             typography_font_size: { size: 48, unit: "px" }
+           }
+        },
+        {
+           type: "container",
+           settings: {
+             flex_direction: "row",
+             justify_content: "space-around",
+             width: "100%",
+             margin: { unit: "px", top: "50", right: "0", bottom: "0", left: "0", isLinked: false }
+           },
+           children: [
+             {
+               type: "widget",
+               widget_type: "html",
+               settings: { html: "<div style='text-align:center'><h2 style='color:#fff;font-size:40px;margin:0'>5,000+</h2><p style='color:#c2c8bb'>Properties Verified</p></div>" }
+             },
+             {
+               type: "widget",
+               widget_type: "html",
+               settings: { html: "<div style='text-align:center'><h2 style='color:#fff;font-size:40px;margin:0'>ISO</h2><p style='color:#c2c8bb'>9001 Certified</p></div>" }
+             },
+             {
+               type: "widget",
+               widget_type: "html",
+               settings: { html: "<div style='text-align:center'><h2 style='color:#fff;font-size:40px;margin:0'>24h</h2><p style='color:#c2c8bb'>Report Delivery</p></div>" }
+             },
+             {
+               type: "widget",
+               widget_type: "html",
+               settings: { html: "<div style='text-align:center'><h2 style='color:#fff;font-size:40px;margin:0'>100%</h2><p style='color:#c2c8bb'>Diaspora Focused</p></div>" }
+             }
+           ]
+        }
+      ]
+    },
+    {
+      type: "container",
+      settings: {
+        content_width: "full",
+        min_height: { size: 500, unit: "px" },
+        background_background: "classic",
+        background_image: { id: 1667, url: "https://www.homeinspectors.ng/wp-content/uploads/2024/12/DSC06168-scaled.jpg" },
+        background_overlay_background: "classic",
+        background_overlay_color: "rgba(18, 20, 21, 0.9)",
+        justify_content: "center",
+        align_items: "center",
+        padding: { unit: "px", top: "100", right: "50", bottom: "100", left: "50", isLinked: false }
+      },
+      children: [
+        {
+          type: "widget",
+          widget_type: "heading",
+          settings: {
+            title: "Your Nigerian Estate, Protected from <span style='color:#65B32E;font-style:italic'>Anywhere.</span>",
+            title_color: "#ffffff",
+            typography_typography: "custom",
+            typography_font_size: { size: 50, unit: "px" },
+            align: "center"
+          }
+        },
+        {
+          type: "widget",
+          widget_type: "text-editor",
+          settings: {
+            editor: "Don't let distance put your investments at risk. Get professional auditing today.",
+            text_color: "#e2e2e3",
+            align: "center"
+          }
+        },
+        {
+          type: "container",
+          settings: {
+            flex_direction: "row",
+            justify_content: "center",
+            gap: { size: 20, unit: "px" },
+            margin: { unit: "px", top: "30", right: "0", bottom: "0", left: "0", isLinked: false }
+          },
+          children: [
+            {
+              type: "widget",
+              widget_type: "button",
+              settings: {
+                text: "Secure Your Investment Today",
+                background_color: "#65B32E",
+                text_color: "#ffffff",
+                border_radius: { unit: "px", top: "30", right: "30", bottom: "30", left: "30", isLinked: true }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      type: "container",
+      settings: {
+        background_color: "#0d0f10",
+        padding: { unit: "px", top: "50", right: "50", bottom: "50", left: "50", isLinked: false },
+        align_items: "center"
+      },
+      children: [
+        {
+          type: "widget",
+          widget_type: "html",
+          settings: {
+            html: "<div style='text-align:center;color:#8a9480'><a href='#' style='color:#8a9480;margin:0 15px;text-decoration:none'>Privacy Policy</a> | <a href='#' style='color:#8a9480;margin:0 15px;text-decoration:none'>Terms of Service</a> | <a href='#' style='color:#8a9480;margin:0 15px;text-decoration:none'>Contact Expert</a><br><br>&copy; 2026 Home Inspectors Nigeria Limited. All rights reserved.</div>"
+          }
+        },
+        {
+          type: "widget",
+          widget_type: "html",
+          settings: {
+             html: "<div style='margin-top:30px;width:100%;max-width:400px'><div style='display:flex;justify-content:space-between;color:#fff;margin-bottom:5px'><span>Precision Level</span><span>99.9%</span></div><div style='height:8px;width:100%;background:#1e2021;border-radius:4px;overflow:hidden'><div style='height:100%;width:99.9%;background:linear-gradient(90deg, #ffb4ab, #65B32E)'></div></div></div>"
+          }
+        }
+      ]
+    }
+  ]
+};
+
+fs.writeFileSync('build_diaspora.json', JSON.stringify(page, null, 2));
+console.log('JSON written');

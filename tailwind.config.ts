@@ -1,0 +1,75 @@
+import type { Config } from "tailwindcss";
+import forms from "@tailwindcss/forms";
+
+const config: Config = {
+  darkMode: "class",
+  content: [
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        surface: "#121415",
+        "surface-dim": "#121415",
+        "surface-bright": "#38393a",
+        "surface-container-lowest": "#0c0e0f",
+        "surface-container-low": "#1a1c1d",
+        "surface-container": "#1e2021",
+        "surface-container-high": "#282a2b",
+        "surface-container-highest": "#333536",
+        "surface-variant": "#42493d",
+        "surface-tint": "#65B32E",
+        "on-surface": "#e2e2e3",
+        "on-surface-variant": "#c2c8bb",
+        "inverse-surface": "#e2e2e3",
+        "inverse-on-surface": "#2e3132",
+        background: "#121415",
+        "on-background": "#e2e2e3",
+        outline: "#8e9289",
+        "outline-variant": "#42493d",
+        primary: "#65B32E",
+        "on-primary": "#183600",
+        "primary-container": "#295000",
+        "on-primary-container": "#b4f087",
+        "primary-fixed": "#b4f087",
+        "primary-fixed-dim": "#99d36e",
+        "on-primary-fixed": "#092100",
+        "on-primary-fixed-variant": "#1c3700",
+        "inverse-primary": "#366b00",
+        secondary: "#bfc9ba",
+        "on-secondary": "#2a3227",
+        "secondary-container": "#42493d",
+        "on-secondary-container": "#dce5d6",
+        tertiary: "#bfc9ba",
+        "tertiary-container": "#3d4a36",
+        "on-tertiary": "#273321",
+        "on-tertiary-container": "#42493d",
+        error: "#ffb4ab",
+        "on-error": "#690005",
+        "error-container": "#93000a",
+        "on-error-container": "#ffdad6",
+      },
+      borderRadius: {
+        DEFAULT: "0.125rem",
+        sm: "0.125rem",
+        md: "0.375rem",
+        lg: "0.25rem",
+        xl: "0.5rem",
+        "2xl": "1rem",
+        "3xl": "1.5rem",
+      },
+      fontFamily: {
+        headline: ["var(--font-manrope)", "Manrope", "sans-serif"],
+        body: ["var(--font-inter)", "Inter", "sans-serif"],
+        label: ["var(--font-inter)", "Inter", "sans-serif"],
+      },
+      fontSize: {
+        "display-lg": ["3.5rem", { lineHeight: "1.1" }],
+      },
+    },
+  },
+  plugins: [forms],
+};
+
+export default config;

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#121415",
+                        "on-tertiary-container": "#424546",
+                        "on-surface": "#e2e2e3",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#65b32e",
+                        "error-container": "#93000a",
+                        "on-primary-fixed-variant": "#002100",
+                        "on-secondary-fixed": "#191c1d",
+                        "background": "#121415",
+                        "primary": "#65b32e",
+                        "outline": "#8b9295",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed": "#b7f397",
+                        "on-surface-variant": "#c1c8cb",
+                        "primary-container": "#488a14",
+                        "on-error": "#690005",
+                        "on-tertiary": "#2c3132",
+                        "tertiary-fixed": "#e0e2e4",
+                        "tertiary-container": "#afb1b3",
+                        "secondary-fixed": "#e1e2e3",
+                        "surface-container-high": "#282a2b",
+                        "surface-container-highest": "#333536",
+                        "inverse-surface": "#e2e2e3",
+                        "inverse-primary": "#2e6a00",
+                        "surface-tint": "#65b32e",
+                        "tertiary-fixed-dim": "#c3c6c8",
+                        "on-tertiary-fixed": "#181c1d",
+                        "secondary": "#c5c7c9",
+                        "on-secondary-container": "#b3b5b6",
+                        "on-secondary-fixed-variant": "#444748",
+                        "on-secondary": "#2e3132",
+                        "on-primary-fixed": "#002100",
+                        "on-tertiary-fixed-variant": "#424748",
+                        "outline-variant": "#41484a",
+                        "surface-bright": "#38393a",
+                        "surface-variant": "#333536",
+                        "surface-container": "#1e2021",
+                        "surface-container-low": "#1a1c1d",
+                        "surface-dim": "#121415",
+                        "surface-container-lowest": "#0c0e0f",
+                        "on-primary": "#003a00",
+                        "on-background": "#e2e2e3",
+                        "inverse-on-surface": "#2f3131",
+                        "on-primary-container": "#d7ffb1",
+                        "tertiary": "#cbccce",
+                        "secondary-container": "#444748",
+                        "secondary-fixed-dim": "#c5c7c9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #121415;
+            color: #e2e2e3;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- SideNavBar Anchor -->
+<aside class="h-screen w-64 fixed left-0 top-0 bg-surface-container-low flex flex-col border-r border-surface-container-highest/15 bg-gradient-to-r from-surface-container-low to-surface z-50">
+<div class="px-6 py-8">
+<div class="font-['Manrope'] font-bold text-primary text-xl tracking-tighter mb-10">HINL</div>
+<nav class="space-y-1">
+<!-- Overview: Active State -->
+<a class="flex items-center gap-3 px-4 py-3 rounded bg-surface-container-high text-primary border-l-4 border-primary font-medium text-sm hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span>Overview</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-outline hover:bg-surface-container-high hover:text-on-surface font-medium text-sm hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span>My Inspections</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-outline hover:bg-surface-container-high hover:text-on-surface font-medium text-sm hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="folder_open">folder_open</span>
+<span>Report Archive</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-outline hover:bg-surface-container-high hover:text-on-surface font-medium text-sm hover:translate-x-1 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+<span>Support</span>
+</a>
+</nav>
+</div>
+<div class="mt-auto px-6 py-8">
+<div class="p-4 bg-surface-container rounded-lg border-l-2 border-primary/30 mb-6">
+<p class="text-[10px] uppercase tracking-widest text-outline mb-2">Need Assistance?</p>
+<button class="w-full py-2 bg-primary text-on-primary text-xs font-bold rounded uppercase tracking-tighter active:scale-95 transition-all">
+                    New Request
+                </button>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden border border-outline/20">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="portrait of a professional nigerian male architect wearing glasses and a charcoal suit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWltN-TOxGDCOudbmR-O-iPGpkY4qKEAax1u8QuJuXS38F0DwLiIZ0-EWHb95MPU7SVfl9VXLljtmv32EXQXnUCwESXdhIYfGCDV-ZZmoYCI4BWqPvFSDb-ZHdOO_8A7R5jRuOVu73JVpOkwc77R0B-qJ6G1DqmD6QFTclivekDcWdGT243WX29S2Da-7IrbvcQz16t9Zb1RsQToVXaLmy5mv7_5hPIn_SErWA5yw-nr1Avj17dOe-4QSM86zjiEEzSA9eAKhIbek"/>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Client Portal</p>
+<p class="text-[10px] text-outline uppercase tracking-tight">HINL Audit Access</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-64 min-h-screen p-8 lg:p-12 bg-surface">
+<!-- Header Section -->
+<header class="mb-12 flex justify-between items-end">
+<div>
+<p class="text-primary font-label uppercase tracking-[0.3em] text-xs mb-2">Precision Oversight</p>
+<h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-on-surface max-w-2xl leading-none">
+                    Property <span class="text-primary/80">Monitoring</span> Dashboard
+                </h1>
+</div>
+<div class="hidden md:block text-right">
+<p class="text-outline text-xs uppercase tracking-widest">Last Updated</p>
+<p class="text-on-surface font-mono">OCT 24, 2023 · 14:30 WAT</p>
+</div>
+</header>
+<!-- Bento Grid Metrics -->
+<div class="editorial-grid mb-12">
+<div class="col-span-12 md:col-span-4 bg-surface-container-low p-8 rounded-lg relative overflow-hidden group">
+<div class="relative z-10">
+<p class="text-outline text-xs uppercase tracking-[0.2em] mb-4">Active Inspections</p>
+<p class="text-5xl font-black text-on-surface tracking-tighter">04</p>
+<div class="mt-6 flex items-center gap-2 text-primary text-xs">
+<span class="material-symbols-outlined text-sm" data-icon="trending_up">trending_up</span>
+<span>2 projects added this week</span>
+</div>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[120px]" data-icon="foundation">foundation</span>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 bg-surface-container-low p-8 rounded-lg relative overflow-hidden group">
+<div class="relative z-10">
+<p class="text-outline text-xs uppercase tracking-[0.2em] mb-4">Reports Completed</p>
+<p class="text-5xl font-black text-on-surface tracking-tighter">12</p>
+<div class="mt-6 flex items-center gap-2 text-outline text-xs">
+<span class="material-symbols-outlined text-sm" data-icon="verified">verified</span>
+<span>View Archive for full history</span>
+</div>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[120px]" data-icon="description">description</span>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 bg-primary p-8 rounded-lg relative overflow-hidden group">
+<div class="relative z-10 text-on-primary">
+<p class="text-on-primary/60 text-xs uppercase tracking-[0.2em] mb-4">Next Inspection</p>
+<p class="text-3xl font-black tracking-tight leading-tight">OCT 28 <br/><span class="text-xl">Lekki Phase 1</span></p>
+<button class="mt-6 px-4 py-2 border border-on-primary/30 text-xs font-bold uppercase rounded hover:bg-on-primary hover:text-primary transition-colors">
+                        Add to Calendar
+                    </button>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="event">event</span>
+</div>
+</div>
+</div>
+<!-- Section Split: Focused Detail & Inspection List -->
+<div class="editorial-grid items-start">
+<!-- Featured Detailed View (Asymmetric Layout) -->
+<section class="col-span-12 lg:col-span-7 space-y-8">
+<div class="bg-surface-container-high rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<div class="relative h-64">
+<img alt="Featured Property" class="w-full h-full object-cover opacity-80" data-alt="contemporary luxury concrete villa in lagos nigeria with floor to ceiling windows at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQoPCbiBnAoXB2r4KqAcJOcPoGc8lt5V6AyU_X13_xvNhW6y9h3JEuf_2Yk4NLCDYFzuuZp_9Cqh_D8cFvljff6qoOqJ72xkSR0bKI5hsaR8Mp7Ovgw6EJzZfli3hcqAfCspMCODrJSCZIF9WLU8zAZLRoQSxYL6KFN8ft0yBPKe8LQazRNaJ9aU0T4N3LTPYv-Z9abfh2EdZeZ7emm6oBH39lERQ68abPhotP-NvOXobrdwfHdlnlVdOVjNUNTq8sGojLU8r-AJg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high via-transparent to-transparent"></div>
+<div class="absolute top-6 left-6 px-3 py-1 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest rounded-sm">
+                            In Progress
+                        </div>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h2 class="text-2xl font-bold tracking-tight text-on-surface">The Pantheon Residence</h2>
+<p class="text-outline text-sm">Plot 42A, Victoria Island, Lagos</p>
+</div>
+<div class="text-right">
+<p class="text-xs uppercase tracking-widest text-outline">Audit Score</p>
+<p class="text-3xl font-black text-primary tracking-tighter">84%</p>
+</div>
+</div>
+<!-- Progress Tracker: Trust Gauge -->
+<div class="mb-10">
+<div class="flex justify-between text-xs mb-3 font-bold uppercase tracking-wider">
+<span class="text-on-surface">Structural Integrity Audit</span>
+<span class="text-primary">Phase 3 of 4</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 75%"></div>
+</div>
+<div class="mt-4 grid grid-cols-4 gap-2">
+<div class="flex flex-col gap-1">
+<div class="h-1 bg-primary rounded-full"></div>
+<span class="text-[9px] text-primary uppercase font-bold">Foundation</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-1 bg-primary rounded-full"></div>
+<span class="text-[9px] text-primary uppercase font-bold">Structural</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-1 bg-primary/40 rounded-full"></div>
+<span class="text-[9px] text-on-surface/40 uppercase font-bold">Mechanical</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-1 bg-surface-container-highest rounded-full"></div>
+<span class="text-[9px] text-outline/30 uppercase font-bold">Final Audit</span>
+</div>
+</div>
+</div>
+<div class="bg-surface p-6 rounded-lg border-l-2 border-primary/20">
+<h4 class="text-xs uppercase tracking-widest text-outline mb-4">Latest Inspector Note</h4>
+<p class="text-on-surface leading-relaxed text-sm italic">
+                                "The reinforced concrete columns in the basement show optimal curing density. Proceeding to non-destructive testing of the mezzanine support structure tomorrow."
+                            </p>
+<div class="mt-6 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="account_circle">account_circle</span>
+</div>
+<p class="text-xs font-bold uppercase tracking-wider">Engr. Chinedu Okafor <span class="text-outline font-normal ml-2">Lead Auditor</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary List: Property Monitoring -->
+<section class="col-span-12 lg:col-span-5 space-y-6">
+<h3 class="text-xs uppercase tracking-[0.3em] text-outline font-bold px-2">Property Monitoring Queue</h3>
+<!-- Property Card 1 -->
+<div class="bg-surface-container-low p-6 rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex justify-between items-center mb-4">
+<div class="px-2 py-1 bg-surface-container-highest text-outline text-[9px] font-bold uppercase tracking-widest rounded-sm">
+                            Scheduled
+                        </div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" data-icon="more_vert">more_vert</span>
+</div>
+<h4 class="text-lg font-bold text-on-surface mb-1">Maitama Heights Annex</h4>
+<p class="text-outline text-xs mb-6">Abuja, FCT · 5 Bedroom Detached</p>
+<div class="flex items-center justify-between pt-4 border-t border-outline/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="calendar_month">calendar_month</span>
+<span class="text-xs text-on-surface font-medium">Nov 02, 2023</span>
+</div>
+<button class="text-[10px] uppercase font-bold tracking-widest text-primary border-b border-primary/0 hover:border-primary/100 transition-all">
+                            View Logistics
+                        </button>
+</div>
+</div>
+<!-- Property Card 2 -->
+<div class="bg-surface-container-low p-6 rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer group border-l-2 border-primary">
+<div class="flex justify-between items-center mb-4">
+<div class="px-2 py-1 bg-primary/20 text-primary text-[9px] font-bold uppercase tracking-widest rounded-sm">
+                            Report Ready
+                        </div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" data-icon="download">download</span>
+</div>
+<h4 class="text-lg font-bold text-on-surface mb-1">Eko Atlantic Luxury Suite</h4>
+<p class="text-outline text-xs mb-6">Victoria Island · Tower C, Level 15</p>
+<div class="flex items-center justify-between pt-4 border-t border-outline/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="verified">verified</span>
+<span class="text-xs text-on-surface font-medium">Completed Oct 20</span>
+</div>
+<button class="text-[10px] uppercase font-bold tracking-widest text-on-surface bg-surface-container-highest px-3 py-1 rounded hover:bg-primary hover:text-on-primary transition-all">
+                            Open PDF
+                        </button>
+</div>
+</div>
+<!-- Property Card 3 -->
+<div class="bg-surface-container-low p-6 rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex justify-between items-center mb-4">
+<div class="px-2 py-1 bg-surface-container-highest text-outline text-[9px] font-bold uppercase tracking-widest rounded-sm">
+                            Queued
+                        </div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" data-icon="more_vert">more_vert</span>
+</div>
+<h4 class="text-lg font-bold text-on-surface mb-1">Ikeja GRA Development</h4>
+<p class="text-outline text-xs mb-6">Lagos Mainland · Phase II Foundation</p>
+<div class="flex items-center justify-between pt-4 border-t border-outline/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-outline" data-icon="schedule">schedule</span>
+<span class="text-xs text-outline font-medium">Awaiting Surveyor</span>
+</div>
+<button class="text-[10px] uppercase font-bold tracking-widest text-outline">
+                            Pending
+                        </button>
+</div>
+</div>
+</section>
+</div>
+<!-- Footer Anchor -->
+<footer class="mt-24 w-full py-12 flex flex-col items-center gap-6 border-t border-surface-container-highest/15">
+<div class="flex gap-8">
+<a class="text-outline text-xs hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-outline text-xs hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-outline text-xs hover:text-primary transition-colors" href="#">Contact Expert</a>
+</div>
+<p class="text-xs text-outline">
+                © 2024 Home Inspection Nigeria Limited. Architectural Precision.
+            </p>
+</footer>
+</main>
+<!-- FAB Suppression: On dashboard we use the sidebar CTA instead -->
+</body></html>

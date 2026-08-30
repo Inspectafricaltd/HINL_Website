@@ -1,0 +1,215 @@
+const fs = require('fs');
+
+const page = {
+  title: "About",
+  status: "publish",
+  page_settings: {
+    background_background: "classic",
+    background_color: "#121415",
+    custom_css: "body { background-color: #121415; color: #e2e2e3; }"
+  },
+  structure: [
+    {
+      type: "container",
+      settings: {
+        content_width: "full",
+        min_height: { size: 80, unit: "vh" },
+        background_background: "classic",
+        background_image: { id: 1664, url: "https://www.homeinspectors.ng/wp-content/uploads/2024/12/DSC06135-scaled.jpg" },
+        background_overlay_background: "gradient",
+        background_overlay_color: "rgba(18, 20, 21, 0.4)",
+        background_overlay_color_b: "#121415",
+        background_overlay_gradient_angle: { size: 180, unit: "deg" },
+        justify_content: "center",
+        align_items: "flex-start",
+        padding: { unit: "px", top: "100", right: "50", bottom: "100", left: "50", isLinked: false }
+      },
+      children: [
+        {
+          type: "widget",
+          widget_type: "heading",
+          settings: {
+            title: "ESTABLISHED VERIFICATION",
+            typography_typography: "custom",
+            typography_font_family: "Inter",
+            typography_font_weight: "700",
+            typography_font_size: { size: 12, unit: "px" },
+            typography_letter_spacing: { size: 1, unit: "px" },
+            title_color: "#65B32E"
+          }
+        },
+        {
+          type: "widget",
+          widget_type: "heading",
+          settings: {
+            title: "Building Quality. <span style='color: #65B32E'>Verified.</span>",
+            typography_typography: "custom",
+            typography_font_family: "Manrope",
+            typography_font_weight: "800",
+            typography_font_size: { size: 60, unit: "px" },
+            title_color: "#ffffff"
+          }
+        },
+        {
+          type: "widget",
+          widget_type: "text-editor",
+          settings: {
+            editor: "Home Inspectors Nigeria Limited (HINL) is redefining how structural integrity and construction standards are measured across the continent.",
+            typography_typography: "custom",
+            typography_font_family: "Inter",
+            typography_font_size: { size: 20, unit: "px" },
+            text_color: "#c2c8bb"
+          }
+        }
+      ]
+    },
+    {
+      type: "container",
+      settings: {
+        background_color: "#121415",
+        padding: { unit: "px", top: "80", right: "50", bottom: "80", left: "50", isLinked: false },
+        align_items: "center"
+      },
+      children: [
+        {
+          type: "widget",
+          widget_type: "html",
+          settings: {
+            html: "<h2 style='font-family:Manrope,sans-serif;font-weight:700;font-size:36px;color:#fff;text-align:center;margin-bottom:24px;'>WHO WE <span style='background-color:#65B32E;color:#fff;padding:0 8px;'>ARE</span></h2><p style='color:#c2c8bb;text-align:center;max-width:800px;margin:0 auto 60px;'>HINL is a building quality verification company powered by inspection systems, construction monitoring, and material testing. We operate across the full property lifecycle.</p>"
+          }
+        },
+        {
+          type: "container",
+          settings: { flex_direction: "row", gap: { size: 24, unit: "px" }, flex_wrap: "wrap", justify_content: "center" },
+          children: [
+            {
+              type: "container",
+              settings: { background_color: "#1a1c1d", border_border: "solid", border_width: { unit: "px", top: "1", right: "1", bottom: "1", left: "1", isLinked: true }, border_color: "#42493d", border_radius: { unit: "px", top: "12", right: "12", bottom: "12", left: "12", isLinked: true }, padding: { unit: "px", top: "24", right: "24", bottom: "24", left: "24", isLinked: true }, width: "23%" },
+              children: [
+                { type: "widget", widget_type: "html", settings: { html: "<div style='width:48px;height:48px;background:#282a2b;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:24px;'><span class='material-symbols-outlined' style='color:#65B32E;'>architecture</span></div><span style='color:#65B32E;font-size:12px;font-weight:bold;'>01</span><h3 style='color:#fff;font-family:Manrope;font-size:24px;margin:8px 0;'>Construction Phase</h3><p style='color:#c2c8bb;font-size:16px;'>We control quality at the point of origin to prevent defects.</p>" } }
+              ]
+            },
+            {
+              type: "container",
+              settings: { background_color: "#1a1c1d", border_border: "solid", border_width: { unit: "px", top: "1", right: "1", bottom: "1", left: "1", isLinked: true }, border_color: "#42493d", border_radius: { unit: "px", top: "12", right: "12", bottom: "12", left: "12", isLinked: true }, padding: { unit: "px", top: "24", right: "24", bottom: "24", left: "24", isLinked: true }, width: "23%", margin: { unit: "px", top: "48", right: "0", bottom: "0", left: "0", isLinked: false } },
+              children: [
+                { type: "widget", widget_type: "html", settings: { html: "<div style='width:48px;height:48px;background:#282a2b;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:24px;'><span class='material-symbols-outlined' style='color:#65B32E;'>biotech</span></div><span style='color:#65B32E;font-size:12px;font-weight:bold;'>02</span><h3 style='color:#fff;font-family:Manrope;font-size:24px;margin:8px 0;'>Material Phase</h3><p style='color:#c2c8bb;font-size:16px;'>Independent material testing and verification to ensure structural integrity.</p>" } }
+              ]
+            },
+            {
+              type: "container",
+              settings: { background_color: "#1a1c1d", border_border: "solid", border_width: { unit: "px", top: "1", right: "1", bottom: "1", left: "1", isLinked: true }, border_color: "#42493d", border_radius: { unit: "px", top: "12", right: "12", bottom: "12", left: "12", isLinked: true }, padding: { unit: "px", top: "24", right: "24", bottom: "24", left: "24", isLinked: true }, width: "23%" },
+              children: [
+                { type: "widget", widget_type: "html", settings: { html: "<div style='width:48px;height:48px;background:#282a2b;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:24px;'><span class='material-symbols-outlined' style='color:#65B32E;'>fact_check</span></div><span style='color:#65B32E;font-size:12px;font-weight:bold;'>03</span><h3 style='color:#fff;font-family:Manrope;font-size:24px;margin:8px 0;'>Completion Phase</h3><p style='color:#c2c8bb;font-size:16px;'>We assess the final condition of built assets for safety and compliance.</p>" } }
+              ]
+            },
+            {
+              type: "container",
+              settings: { background_color: "#1a1c1d", border_border: "solid", border_width: { unit: "px", top: "1", right: "1", bottom: "1", left: "1", isLinked: true }, border_color: "#42493d", border_radius: { unit: "px", top: "12", right: "12", bottom: "12", left: "12", isLinked: true }, padding: { unit: "px", top: "24", right: "24", bottom: "24", left: "24", isLinked: true }, width: "23%", margin: { unit: "px", top: "48", right: "0", bottom: "0", left: "0", isLinked: false } },
+              children: [
+                { type: "widget", widget_type: "html", settings: { html: "<div style='width:48px;height:48px;background:#282a2b;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:24px;'><span class='material-symbols-outlined' style='color:#65B32E;'>search</span></div><span style='color:#65B32E;font-size:12px;font-weight:bold;'>04</span><h3 style='color:#fff;font-family:Manrope;font-size:24px;margin:8px 0;'>Pre-Purchase</h3><p style='color:#c2c8bb;font-size:16px;'>We quantify risk for buyers, identifying hidden deficiencies before investment.</p>" } }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      type: "container",
+      settings: {
+        background_color: "#0d0f10",
+        padding: { unit: "px", top: "80", right: "50", bottom: "80", left: "50", isLinked: false },
+        flex_direction: "row",
+        align_items: "center",
+        gap: { size: 48, unit: "px" }
+      },
+      children: [
+        {
+          type: "container",
+          settings: { width: "50%", gap: { size: 24, unit: "px" } },
+          children: [
+            {
+              type: "container",
+              settings: { background_color: "#65B32E", padding: { unit: "px", top: "32", right: "32", bottom: "32", left: "32", isLinked: true }, border_radius: { unit: "px", top: "12", right: "12", bottom: "12", left: "12", isLinked: true } },
+              children: [
+                { type: "widget", widget_type: "heading", settings: { title: "Our Vision", title_color: "#ffffff", typography_typography: "custom", typography_font_family: "Manrope", typography_font_size: { size: 36, unit: "px" } } },
+                { type: "widget", widget_type: "text-editor", settings: { editor: "To become Nigeria's leading platform for Building Quality Verification, Construction Monitoring, Material Testing & Validation, and Property Risk Intelligence.", text_color: "#ffffff", typography_typography: "custom", typography_font_weight: "600", typography_font_size: { size: 18, unit: "px" } } }
+              ]
+            },
+            {
+              type: "container",
+              settings: { border_border: "solid", border_width: { unit: "px", top: "1", right: "1", bottom: "1", left: "1", isLinked: true }, border_color: "#42493d", padding: { unit: "px", top: "32", right: "32", bottom: "32", left: "32", isLinked: true }, border_radius: { unit: "px", top: "12", right: "12", bottom: "12", left: "12", isLinked: true } },
+              children: [
+                { type: "widget", widget_type: "heading", settings: { title: "Our Mission", title_color: "#65B32E", typography_typography: "custom", typography_font_family: "Manrope", typography_font_size: { size: 36, unit: "px" } } },
+                { type: "widget", widget_type: "text-editor", settings: { editor: "To deliver accurate, standardized, and technology-driven systems that verify building quality, validate materials, and reduce real estate risk.", text_color: "#c2c8bb", typography_typography: "custom", typography_font_size: { size: 18, unit: "px" } } }
+              ]
+            }
+          ]
+        },
+        {
+          type: "container",
+          settings: { width: "50%" },
+          children: [
+            { type: "widget", widget_type: "image", settings: { image: { id: 3750, url: "https://www.homeinspectors.ng/wp-content/uploads/2026/02/gh-1-e1771364179618.jpeg" }, border_radius: { unit: "px", top: "12", right: "12", bottom: "12", left: "12", isLinked: true } } }
+          ]
+        }
+      ]
+    },
+    {
+      type: "container",
+      settings: { background_color: "#121415", padding: { unit: "px", top: "80", right: "50", bottom: "80", left: "50", isLinked: false } },
+      children: [
+        { type: "widget", widget_type: "html", settings: { html: "<h2 style='font-family:Manrope,sans-serif;font-weight:700;font-size:36px;color:#fff;text-align:center;margin-bottom:60px;'>VALUE <span style='background-color:#65B32E;color:#fff;padding:0 8px;'>PILLARS</span></h2>" } },
+        {
+          type: "container",
+          settings: { flex_direction: "row", flex_wrap: "wrap", justify_content: "center", gap: { size: 24, unit: "px" } },
+          children: [
+            { type: "widget", widget_type: "html", settings: { html: "<div style='background:#1e2021;border:1px solid #42493d;border-radius:8px;padding:24px;text-align:center;width:200px;'><span class='material-symbols-outlined' style='color:#65B32E;font-size:36px;margin-bottom:12px;'>verified_user</span><h4 style='color:#fff;font-family:Manrope;font-size:24px;margin:0 0 8px;'>Integrity</h4><p style='color:#c2c8bb;margin:0;'>Independent verification</p></div>" } },
+            { type: "widget", widget_type: "html", settings: { html: "<div style='background:#1e2021;border:1px solid #42493d;border-radius:8px;padding:24px;text-align:center;width:200px;'><span class='material-symbols-outlined' style='color:#65B32E;font-size:36px;margin-bottom:12px;'>insights</span><h4 style='color:#fff;font-family:Manrope;font-size:24px;margin:0 0 8px;'>Innovation</h4><p style='color:#c2c8bb;margin:0;'>Technology & data</p></div>" } },
+            { type: "widget", widget_type: "html", settings: { html: "<div style='background:#1e2021;border:1px solid #42493d;border-radius:8px;padding:24px;text-align:center;width:200px;'><span class='material-symbols-outlined' style='color:#65B32E;font-size:36px;margin-bottom:12px;'>precision_manufacturing</span><h4 style='color:#fff;font-family:Manrope;font-size:24px;margin:0 0 8px;'>Accuracy</h4><p style='color:#c2c8bb;margin:0;'>Fact-based systems</p></div>" } },
+            { type: "widget", widget_type: "html", settings: { html: "<div style='background:#1e2021;border:1px solid #42493d;border-radius:8px;padding:24px;text-align:center;width:200px;'><span class='material-symbols-outlined' style='color:#65B32E;font-size:36px;margin-bottom:12px;'>public</span><h4 style='color:#fff;font-family:Manrope;font-size:24px;margin:0 0 8px;'>Impact</h4><p style='color:#c2c8bb;margin:0;'>Better buildings</p></div>" } },
+            { type: "widget", widget_type: "html", settings: { html: "<div style='background:#1e2021;border:1px solid #42493d;border-radius:8px;padding:24px;text-align:center;width:200px;'><span class='material-symbols-outlined' style='color:#65B32E;font-size:36px;margin-bottom:12px;'>description</span><h4 style='color:#fff;font-family:Manrope;font-size:24px;margin:0 0 8px;'>Clarity</h4><p style='color:#c2c8bb;margin:0;'>Actionable reporting</p></div>" } }
+          ]
+        }
+      ]
+    },
+    {
+      type: "container",
+      settings: { background_color: "#1a1c1d", padding: { unit: "px", top: "80", right: "50", bottom: "80", left: "50", isLinked: false }, flex_direction: "row", align_items: "center", gap: { size: 80, unit: "px" } },
+      children: [
+        {
+          type: "container",
+          settings: { width: "50%" },
+          children: [
+            { type: "widget", widget_type: "html", settings: { html: "<div style='position:relative;border:1px solid #42493d;border-radius:12px;overflow:hidden;'><img src='https://www.homeinspectors.ng/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-15-at-9.00.31-PM-1-e1771330363758.jpeg' style='width:100%;display:block;filter:grayscale(100%);transition:filter 0.5s;' onmouseover='this.style.filter=\"grayscale(0%)\"' onmouseout='this.style.filter=\"grayscale(100%)\"'><div style='position:absolute;bottom:0;left:0;width:100%;padding:24px;background:#65B32E;'><span style='color:#fff;opacity:0.8;font-size:12px;text-transform:uppercase;font-weight:bold;letter-spacing:1px;'>President</span><h3 style='color:#fff;font-family:Manrope;font-size:30px;margin:0;font-weight:bold;'>Casper Chidubem</h3></div></div>" } }
+          ]
+        },
+        {
+          type: "container",
+          settings: { width: "50%", gap: { size: 24, unit: "px" } },
+          children: [
+            { type: "widget", widget_type: "html", settings: { html: "<h2 style='font-family:Manrope,sans-serif;font-weight:700;font-size:36px;color:#fff;margin-bottom:24px;'>ABOUT THE <span style='background-color:#65B32E;color:#fff;padding:0 8px;'>PRESIDENT</span></h2><p style='color:#fff;font-size:18px;font-weight:600;line-height:1.6;margin-bottom:16px;'>Casper Chidubem brings over two decades of experience in construction and project management.</p><p style='color:#c2c8bb;font-size:16px;line-height:1.6;margin-bottom:24px;'>Driven by the lack of quality control in African construction, he founded HINL to introduce structured verification systems. He is leading the development of a Pan-African inspection and construction quality platform.</p><div style='display:flex;gap:24px;align-items:center;'><span class='material-symbols-outlined' style='color:#65B32E;cursor:pointer;'>share</span><span class='material-symbols-outlined' style='color:#65B32E;cursor:pointer;'>contact_page</span><span style='color:#c2c8bb;font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:1px;'>@homeinspectorng</span></div>" } }
+          ]
+        }
+      ]
+    },
+    {
+      type: "container",
+      settings: { background_color: "#121415", padding: { unit: "px", top: "80", right: "50", bottom: "80", left: "50", isLinked: false } },
+      children: [
+        { type: "widget", widget_type: "html", settings: { html: "<h2 style='font-family:Manrope,sans-serif;font-weight:700;font-size:36px;color:#fff;text-align:center;margin-bottom:60px;'>WHAT OUR <span style='background-color:#65B32E;color:#fff;padding:0 8px;'>CLIENTS SAY</span></h2>" } },
+        {
+          type: "container",
+          settings: { flex_direction: "row", gap: { size: 24, unit: "px" } },
+          children: [
+            { type: "widget", widget_type: "html", settings: { html: "<div style='background:#1e2021;border:1px solid #42493d;border-radius:12px;padding:32px;flex:1;'><span class='material-symbols-outlined' style='color:#65B32E;font-size:48px;opacity:0.2;display:block;margin-bottom:16px;'>format_quote</span><p style='color:#e2e2e3;font-size:18px;font-style:italic;margin-bottom:24px;'>\"Distance was my biggest fear. I couldn't monitor my project in Lekki. HINL stepped in, and their weekly reports saved me millions from contractor corner-cutting.\"</p><div style='display:flex;align-items:center;gap:16px;'><div style='width:48px;height:48px;background:#282a2b;border-radius:50%;display:flex;align-items:center;justify-content:center;'><span class='material-symbols-outlined' style='color:#c2c8bb;'>person</span></div><div><h4 style='color:#65B32E;margin:0;font-family:Manrope;font-size:18px;font-weight:bold;'>George Martins</h4><span style='color:#c2c8bb;font-size:14px;'>Canadian-Based Investor</span></div></div></div>" } },
+            { type: "widget", widget_type: "html", settings: { html: "<div style='background:#1e2021;border:1px solid #42493d;border-radius:12px;padding:32px;flex:1;'><span class='material-symbols-outlined' style='color:#65B32E;font-size:48px;opacity:0.2;display:block;margin-bottom:16px;'>format_quote</span><p style='color:#e2e2e3;font-size:18px;font-style:italic;margin-bottom:24px;'>\"HINL's attention to detail is unmatched. Their pre-purchase inspection report was comprehensive and gave my clients total peace of mind.\"</p><div style='display:flex;align-items:center;gap:16px;'><div style='width:48px;height:48px;background:#282a2b;border-radius:50%;display:flex;align-items:center;justify-content:center;'><span class='material-symbols-outlined' style='color:#c2c8bb;'>person</span></div><div><h4 style='color:#65B32E;margin:0;font-family:Manrope;font-size:18px;font-weight:bold;'>DeeGlobal Realties</h4><span style='color:#c2c8bb;font-size:14px;'>Property Manager</span></div></div></div>" } }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+fs.writeFileSync('build_about.json', JSON.stringify(page, null, 2));
+console.log('JSON written');

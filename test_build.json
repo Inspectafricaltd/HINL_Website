@@ -1,0 +1,21 @@
+{
+  "title": "Home Test",
+  "status": "publish",
+  "structure": [
+    {
+      "type": "container",
+      "settings": {
+        "content_width": "full"
+      },
+      "children": [
+        {
+          "type": "widget",
+          "widget_type": "heading",
+          "settings": {
+            "title": "Welcome to HINL"
+          }
+        }
+      ]
+    }
+  ]
+}

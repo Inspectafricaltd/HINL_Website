@@ -1,0 +1,320 @@
+const fs = require('fs');
+
+const page = {
+  title: "Home",
+  status: "publish",
+  page_settings: {
+    background_background: "classic",
+    background_color: "#121415",
+    custom_css: "body { background-color: #121415; color: #e2e2e3; }"
+  },
+  structure: [
+    {
+      type: "container",
+      settings: {
+        content_width: "full",
+        min_height: { size: 100, unit: "vh" },
+        background_background: "classic",
+        background_image: { id: 1657, url: "https://www.homeinspectors.ng/wp-content/uploads/2024/12/DSC06085-scaled.jpg" },
+        background_overlay_background: "gradient",
+        background_overlay_color: "rgba(18, 20, 21, 0.7)",
+        background_overlay_color_b: "rgba(18, 20, 21, 0)",
+        background_overlay_gradient_angle: { size: 90, unit: "deg" },
+        justify_content: "center",
+        align_items: "flex-start",
+        padding: { unit: "px", top: "100", right: "50", bottom: "100", left: "50", isLinked: false }
+      },
+      children: [
+        {
+          type: "widget",
+          widget_type: "heading",
+          settings: {
+            title: "Build or Buy With <span style='color: #65B32E; font-style: italic'>Confidence</span> — Not Assumptions",
+            typography_typography: "custom",
+            typography_font_family: "Manrope",
+            typography_font_weight: "800",
+            typography_font_size: { size: 72, unit: "px" },
+            title_color: "#ffffff"
+          }
+        },
+        {
+          type: "widget",
+          widget_type: "text-editor",
+          settings: {
+            editor: "Professional property inspections and construction control that reveal hidden defects, verify work, and protect your investment.",
+            typography_typography: "custom",
+            typography_font_family: "Inter",
+            typography_font_size: { size: 20, unit: "px" },
+            text_color: "#c2c8bb"
+          }
+        },
+        {
+          type: "widget",
+          widget_type: "html",
+          settings: {
+            html: "<div style='display:flex;gap:16px;color:#c2c8bb;font-size:14px;margin-bottom:32px;'><span style='display:flex;align-items:center;gap:8px;'><span class='material-symbols-outlined' style='color:#65B32E;'>verified</span> 100+ years combined construction experience</span><span style='display:flex;align-items:center;gap:8px;'><span class='material-symbols-outlined' style='color:#facc15;'>star</span> 5-Star Google Rating</span></div>"
+          }
+        },
+        {
+          type: "container",
+          settings: {
+            flex_direction: "row",
+            gap: { size: 16, unit: "px" },
+            flex_wrap: "wrap"
+          },
+          children: [
+            {
+              type: "widget",
+              widget_type: "button",
+              settings: {
+                text: "Book Inspection",
+                background_color: "#65B32E",
+                text_color: "#ffffff",
+                border_radius: { unit: "px", top: "8", right: "8", bottom: "8", left: "8", isLinked: true },
+                typography_typography: "custom",
+                typography_font_family: "Manrope",
+                typography_font_weight: "bold",
+                typography_font_size: { size: 18, unit: "px" }
+              }
+            },
+            {
+              type: "widget",
+              widget_type: "button",
+              settings: {
+                text: "Start Construction Control",
+                background_color: "transparent",
+                text_color: "#ffffff",
+                border_border: "solid",
+                border_width: { unit: "px", top: "1", right: "1", bottom: "1", left: "1", isLinked: true },
+                border_color: "#8a9480",
+                border_radius: { unit: "px", top: "8", right: "8", bottom: "8", left: "8", isLinked: true },
+                typography_typography: "custom",
+                typography_font_family: "Manrope",
+                typography_font_weight: "bold",
+                typography_font_size: { size: 18, unit: "px" }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      type: "container",
+      settings: {
+        background_color: "#1a1c1d",
+        padding: { unit: "px", top: "100", right: "50", bottom: "100", left: "50", isLinked: false },
+        flex_direction: "row",
+        align_items: "center",
+        gap: { size: 64, unit: "px" }
+      },
+      children: [
+        {
+          type: "container",
+          settings: { width: "50%" },
+          children: [
+            {
+              type: "widget",
+              widget_type: "heading",
+              settings: {
+                title: "THE PROBLEM",
+                typography_typography: "custom",
+                typography_font_family: "Inter",
+                typography_font_weight: "bold",
+                typography_font_size: { size: 14, unit: "px" },
+                typography_letter_spacing: { size: 3, unit: "px" },
+                title_color: "#ffb4ab"
+              }
+            },
+            {
+              type: "widget",
+              widget_type: "heading",
+              settings: {
+                title: "Most Defects Are <span style='color: #65B32E'>Built In</span> — Not Discovered",
+                typography_typography: "custom",
+                typography_font_family: "Manrope",
+                typography_font_weight: "800",
+                typography_font_size: { size: 48, unit: "px" },
+                title_color: "#ffffff"
+              }
+            },
+            {
+              type: "widget",
+              widget_type: "text-editor",
+              settings: {
+                editor: "Properties often look perfect at handover. Then cracks appear. Wiring fails. Plumbing leaks.",
+                typography_typography: "custom",
+                typography_font_family: "Inter",
+                typography_font_size: { size: 18, unit: "px" },
+                text_color: "#c2c8bb"
+              }
+            },
+            {
+              type: "container",
+              settings: {
+                background_color: "rgba(255, 180, 171, 0.1)",
+                border_border: "solid",
+                border_width: { unit: "px", top: "0", right: "0", bottom: "0", left: "4", isLinked: false },
+                border_color: "#ffb4ab",
+                padding: { unit: "px", top: "24", right: "24", bottom: "24", left: "24", isLinked: true },
+                border_radius: { unit: "px", top: "0", right: "12", bottom: "12", left: "0", isLinked: false }
+              },
+              children: [
+                {
+                  type: "widget",
+                  widget_type: "heading",
+                  settings: {
+                    title: "Most defects only show after 6 months — making standard warranties inadequate.",
+                    typography_typography: "custom",
+                    typography_font_weight: "bold",
+                    typography_font_size: { size: 18, unit: "px" },
+                    title_color: "#ffffff"
+                  }
+                },
+                {
+                  type: "widget",
+                  widget_type: "text-editor",
+                  settings: {
+                    editor: "By then, the damage is already done.",
+                    text_color: "#c2c8bb"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          type: "container",
+          settings: { width: "50%" },
+          children: [
+            {
+              type: "widget",
+              widget_type: "html",
+              settings: {
+                html: "<div style='position:relative;border-radius:16px;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,0.5);'><img src='https://www.homeinspectors.ng/wp-content/uploads/2024/12/DSC06096-scaled.jpg' style='width:100%;height:480px;object-fit:cover;'><div style='position:absolute;bottom:24px;left:24px;background:rgba(255,180,171,0.9);padding:8px 16px;border-radius:8px;display:inline-flex;align-items:center;gap:8px;'><span class='material-symbols-outlined' style='color:#fff;font-size:16px;'>warning</span><span style='color:#fff;font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:1px;'>Defect Found Before Handover</span></div></div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      type: "container",
+      settings: {
+        background_color: "#121415",
+        padding: { unit: "px", top: "100", right: "50", bottom: "100", left: "50", isLinked: false },
+        flex_direction: "row",
+        align_items: "center",
+        gap: { size: 64, unit: "px" }
+      },
+      children: [
+        {
+          type: "container",
+          settings: { width: "66%", background_color: "#1a1c1d", padding: { unit: "px", top: "40", right: "40", bottom: "40", left: "40", isLinked: true }, border_radius: { unit: "px", top: "16", right: "16", bottom: "16", left: "16", isLinked: true } },
+          children: [
+            {
+              type: "widget",
+              widget_type: "heading",
+              settings: {
+                title: "PRIMARY AUTHORITY",
+                typography_typography: "custom",
+                typography_font_family: "Inter",
+                typography_font_weight: "bold",
+                typography_font_size: { size: 14, unit: "px" },
+                typography_letter_spacing: { size: 3, unit: "px" },
+                title_color: "#65B32E"
+              }
+            },
+            {
+              type: "widget",
+              widget_type: "heading",
+              settings: {
+                title: "Construction Control Inspections",
+                typography_typography: "custom",
+                typography_font_family: "Manrope",
+                typography_font_weight: "800",
+                typography_font_size: { size: 48, unit: "px" },
+                title_color: "#ffffff"
+              }
+            },
+            {
+              type: "widget",
+              widget_type: "text-editor",
+              settings: {
+                editor: "Independent oversight from foundation to finishing.",
+                typography_typography: "custom",
+                typography_font_family: "Inter",
+                typography_font_size: { size: 18, unit: "px" },
+                text_color: "#c2c8bb"
+              }
+            },
+            {
+              type: "widget",
+              widget_type: "heading",
+              settings: {
+                title: "We don't wait for defects. We catch them as they happen.",
+                typography_typography: "custom",
+                typography_font_family: "Manrope",
+                typography_font_weight: "bold",
+                typography_font_size: { size: 20, unit: "px" },
+                title_color: "#65B32E"
+              }
+            },
+            {
+              type: "widget",
+              widget_type: "html",
+              settings: {
+                html: "<div style='display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:32px 0;'><div style='display:flex;align-items:center;gap:16px;background:#1e2021;padding:16px;border-radius:12px;border:1px solid #42493d;'><span class='material-symbols-outlined' style='color:#65B32E;'>layers</span><span style='color:#e2e2e3;font-size:14px;font-weight:500;'>Stage-by-stage monitoring</span></div><div style='display:flex;align-items:center;gap:16px;background:#1e2021;padding:16px;border-radius:12px;border:1px solid #42493d;'><span class='material-symbols-outlined' style='color:#65B32E;'>science</span><span style='color:#e2e2e3;font-size:14px;font-weight:500;'>Material testing (concrete, steel)</span></div><div style='display:flex;align-items:center;gap:16px;background:#1e2021;padding:16px;border-radius:12px;border:1px solid #42493d;'><span class='material-symbols-outlined' style='color:#65B32E;'>fact_check</span><span style='color:#e2e2e3;font-size:14px;font-weight:500;'>Workmanship verification</span></div><div style='display:flex;align-items:center;gap:16px;background:#1e2021;padding:16px;border-radius:12px;border:1px solid #42493d;'><span class='material-symbols-outlined' style='color:#65B32E;'>assignment_turned_in</span><span style='color:#e2e2e3;font-size:14px;font-weight:500;'>Contractor compliance checks</span></div></div>"
+              }
+            },
+            {
+              type: "widget",
+              widget_type: "button",
+              settings: {
+                text: "Start Construction Control",
+                background_color: "#65B32E",
+                text_color: "#ffffff",
+                border_radius: { unit: "px", top: "8", right: "8", bottom: "8", left: "8", isLinked: true },
+                typography_typography: "custom",
+                typography_font_family: "Manrope",
+                typography_font_weight: "bold",
+                typography_font_size: { size: 18, unit: "px" }
+              }
+            }
+          ]
+        },
+        {
+          type: "container",
+          settings: { width: "33%" },
+          children: [
+             {
+              type: "widget",
+              widget_type: "html",
+              settings: {
+                html: "<div style='position:relative;border-radius:16px;overflow:hidden;min-height:420px;'><img src='https://www.homeinspectors.ng/wp-content/uploads/2024/12/DSC06142-scaled.jpg' style='position:absolute;width:100%;height:100%;object-fit:cover;'><div style='position:absolute;bottom:24px;left:16px;right:16px;background:rgba(30,32,33,0.9);padding:16px;border-radius:12px;border:1px solid rgba(101,179,46,0.2);'><div style='display:flex;align-items:center;gap:8px;margin-bottom:4px;'><span style='width:8px;height:8px;background:#65B32E;border-radius:50%;'></span><span style='color:#65B32E;font-size:10px;font-weight:bold;text-transform:uppercase;letter-spacing:1px;'>Real-time reporting active</span></div><p style='color:#fff;font-size:12px;font-weight:500;margin:0;'>Stage-by-Stage Monitoring</p></div></div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      type: "container",
+      settings: {
+        background_color: "#0d0f10",
+        padding: { unit: "px", top: "80", right: "50", bottom: "80", left: "50", isLinked: false }
+      },
+      children: [
+        {
+          type: "widget",
+          widget_type: "html",
+          settings: {
+            html: "<div style='background:#1a1c1d;border-radius:32px;padding:80px;text-align:center;position:relative;overflow:hidden;'><h2 style='font-family:Manrope;font-size:60px;font-weight:800;color:#fff;margin-bottom:32px;'>Don't Build Blind. <span style='color:#65B32E;'>Don't Buy Blind.</span></h2><div style='display:flex;justify-content:center;gap:16px;'><a href='/services#booking' style='background:#65B32E;color:#fff;padding:24px 48px;border-radius:8px;font-family:Manrope;font-weight:900;font-size:20px;text-decoration:none;'>Book Inspection Now</a><a href='/services' style='border:2px solid #65B32E;color:#65B32E;padding:24px 48px;border-radius:8px;font-family:Manrope;font-weight:900;font-size:20px;text-decoration:none;'>View Pricing</a></div><div style='display:flex;justify-content:center;gap:48px;margin-top:40px;border-top:1px solid #42493d;padding-top:40px;'><div style='text-align:center;'><div style='width:40px;height:40px;background:rgba(101,179,46,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;'><span class='material-symbols-outlined' style='color:#65B32E;'>call</span></div><span style='color:#fff;font-size:14px;font-weight:500;'>+234 708 298 0999</span></div><div style='text-align:center;'><div style='width:40px;height:40px;background:rgba(101,179,46,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;'><span class='material-symbols-outlined' style='color:#65B32E;'>language</span></div><span style='color:#fff;font-size:14px;font-weight:500;'>homeinspectors.ng</span></div><div style='text-align:center;'><div style='width:40px;height:40px;background:rgba(101,179,46,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;'><span class='material-symbols-outlined' style='color:#65B32E;'>mail</span></div><span style='color:#fff;font-size:14px;font-weight:500;'>info@homeinspectors.ng</span></div></div></div>"
+          }
+        }
+      ]
+    }
+  ]
+};
+
+fs.writeFileSync('build_home.json', JSON.stringify(page, null, 2));
+console.log('JSON written');

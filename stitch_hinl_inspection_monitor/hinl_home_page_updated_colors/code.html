@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HINL | Architectural Precision Home Inspections Nigeria</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#121415",
+                    "on-tertiary-container": "#42493d",
+                    "on-surface": "#e2e2e3",
+                    "error": "#ffb4ab",
+                    "primary-fixed-dim": "#99d36e",
+                    "error-container": "#93000a",
+                    "on-primary-fixed-variant": "#1c3700",
+                    "on-secondary-fixed": "#191c18",
+                    "background": "#121415",
+                    "primary": "#65B32E",
+                    "outline": "#8e9289",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed": "#b4f087",
+                    "on-surface-variant": "#c2c8bb",
+                    "primary-container": "#295000",
+                    "on-error": "#690005",
+                    "on-tertiary": "#273321",
+                    "tertiary-fixed": "#dce7d1",
+                    "tertiary-container": "#3d4a36",
+                    "secondary-fixed": "#dce5d6",
+                    "surface-container-high": "#282a2b",
+                    "surface-container-highest": "#333536",
+                    "inverse-surface": "#e2e2e3",
+                    "inverse-primary": "#366b00",
+                    "surface-tint": "#99d36e",
+                    "tertiary-fixed-dim": "#c0cbae",
+                    "on-tertiary-fixed": "#101f0c",
+                    "secondary": "#bfc9ba",
+                    "on-secondary-container": "#dce5d6",
+                    "on-secondary-fixed-variant": "#43483f",
+                    "on-secondary": "#2a3227",
+                    "on-primary-fixed": "#092100",
+                    "on-tertiary-fixed-variant": "#3d4a36",
+                    "outline-variant": "#42493d",
+                    "surface-bright": "#38393a",
+                    "surface-variant": "#42493d",
+                    "surface-container": "#1e2021",
+                    "surface-container-low": "#1a1c1d",
+                    "surface-dim": "#121415",
+                    "surface-container-lowest": "#0c0e0f",
+                    "on-primary": "#183600",
+                    "on-background": "#e2e2e3",
+                    "inverse-on-surface": "#2e3132",
+                    "on-primary-container": "#b4f087",
+                    "tertiary": "#bfc9ba",
+                    "secondary-container": "#42493d",
+                    "secondary-fixed-dim": "#bfc9ba"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-text-shadow {
+            text-shadow: 0 4px 12px rgba(0,0,0,0.8);
+        }
+        .tonal-transition {
+            background: linear-gradient(to bottom, transparent, #121415);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 bg-[#121415]/80 backdrop-blur-md shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<nav class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-2">
+<img alt="HINL Logo" class="h-8 w-auto" data-alt="minimalist architectural logo for Home Inspection Nigeria Limited using professional green and black tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAyxBQNeBZEsgV8Z8mlM6xWGZyt9PzFJzZUPB9st5WUfsYFdVmui-IeBwVnVvyTdI0LT0GUvFPX3vaPr2nmJYGJOd2Aq2BKWCAtYQ67O3Id3etw-MfPgxD5Zaqbuy0T90tXLbbeHbJOnw03IYIcgWBtGDtn8qO_FIs5Jdio3qRksn-plUI8wGFiuM0rWvU9vSkmE7TRHmU3o0hUgpRjpodOc8W2f9vTViBXjSBzwwsHkeAxYnyWeFwTC98u6vRXqLmKumpaXPwD4I"/>
+<span class="text-2xl font-black tracking-tighter text-[#65B32E]">HINL</span>
+</div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Manrope'] uppercase tracking-widest text-sm text-[#65B32E] border-b-2 border-[#65B32E] pb-1" href="#">Services</a>
+<a class="font-['Manrope'] uppercase tracking-widest text-sm text-[#e2e2e3] hover:text-[#65B32E] transition-colors" href="#">Diaspora Services</a>
+<a class="font-['Manrope'] uppercase tracking-widest text-sm text-[#e2e2e3] hover:text-[#65B32E] transition-colors" href="#">Sample Reports</a>
+<a class="font-['Manrope'] uppercase tracking-widest text-sm text-[#e2e2e3] hover:text-[#65B32E] transition-colors" href="#">Pricing</a>
+</div>
+<button class="bg-[#65B32E] text-[#183600] px-6 py-2.5 rounded-lg font-bold text-sm tracking-tight hover:scale-95 active:scale-90 transition-all duration-300">
+                Book Your Inspection
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="stunning modern luxury villa in Lagos Nigeria at twilight with warm interior lights glowing against a deep blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXrB0iSmJXugw45egopmfUZGukkhnGvOF_7OzgSWpjhvMPuQoQTp98o5oMeghMQV95wsy8ofj1HAC6ka94JnSu0a1rOwrb1gSaUJJj_oXNY0xyuvPC6K3ziKMxyt5UpCi57BYJAnTOXzcPntG62fooIUZqSJCmrqVWJp2EKjsqnSU5hI4V5VQJkBRrDkt9OCH9fTFFuS29WrEL3lRCRad-hOMX_ORYNpmftFIiJJBqwHUhi_L0KoSTayydDZJgd4cm772J4H3p3E4"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 container mx-auto px-8 md:px-12 grid md:grid-cols-12 gap-12">
+<div class="md:col-span-8 lg:col-span-7">
+<span class="text-primary font-headline font-bold uppercase tracking-[0.3em] text-sm block mb-6">Nigeria's Premiere Property Auditor</span>
+<h1 class="text-display-lg font-headline font-extrabold text-5xl md:text-7xl leading-[1.1] mb-8 editorial-text-shadow">
+                        Before You Buy Property in Nigeria... <span class="text-primary italic">Know Exactly</span> What You're Getting.
+                    </h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl mb-12 leading-relaxed">
+                        Precision audits for residential and commercial assets. We reveal the hidden structural, electrical, and legal risks so you can invest with absolute certainty.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-10 py-5 rounded font-headline font-bold text-lg hover:bg-primary-container transition-all shadow-xl">
+                            Book Your Inspection
+                        </button>
+<button class="bg-surface-bright/40 backdrop-blur-md text-on-surface px-10 py-5 rounded font-headline font-bold text-lg border border-outline/20 hover:bg-surface-bright/60 transition-all">
+                            View Sample Reports
+                        </button>
+</div>
+</div>
+</div>
+<!-- Floating Statistics Component (Bento-style snippet) -->
+<div class="absolute bottom-12 right-12 hidden lg:flex gap-6 z-10">
+<div class="bg-surface-container-high/80 backdrop-blur-xl p-8 rounded-xl border-l-4 border-primary">
+<p class="text-primary font-headline font-black text-5xl mb-1">5,000+</p>
+<p class="text-on-surface-variant text-sm font-medium tracking-widest uppercase">Properties Verified</p>
+</div>
+<div class="bg-surface-container-high/80 backdrop-blur-xl p-8 rounded-xl border-l-4 border-primary">
+<p class="text-primary font-headline font-black text-5xl mb-1">₦420B+</p>
+<p class="text-on-surface-variant text-sm font-medium tracking-widest uppercase">Value Inspected</p>
+</div>
+</div>
+</section>
+<!-- Stats Section Mobile/Small Screens -->
+<section class="lg:hidden bg-surface-container-low py-12 px-8">
+<div class="grid grid-cols-2 gap-4">
+<div class="text-center">
+<p class="text-primary font-headline font-black text-4xl mb-1">5,000+</p>
+<p class="text-on-surface-variant text-[10px] font-medium tracking-widest uppercase">Properties Verified</p>
+</div>
+<div class="text-center">
+<p class="text-primary font-headline font-black text-4xl mb-1">12 Years</p>
+<p class="text-on-surface-variant text-[10px] font-medium tracking-widest uppercase">Domain Expertise</p>
+</div>
+</div>
+</section>
+<!-- Feature Bento Grid Section -->
+<section class="py-32 px-8 container mx-auto">
+<div class="mb-20 max-w-3xl">
+<h2 class="text-primary font-headline font-bold uppercase tracking-widest text-sm mb-4">Our Methodology</h2>
+<h3 class="text-4xl md:text-5xl font-headline font-extrabold mb-8 leading-tight">The Forensic Approach to Home Inspection.</h3>
+<p class="text-on-surface-variant text-lg">We don't just "look" at homes. We audit them. Our team of certified structural engineers and master technicians leave no stone unturned.</p>
+</div>
+<div class="grid md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<!-- Bento Item 1: Structural -->
+<div class="md:col-span-7 bg-surface-container-low rounded-2xl overflow-hidden group relative p-10 flex flex-col justify-end">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="close up of an engineer in a safety vest inspecting concrete foundation cracks with precision measuring tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwqHxrJcBhjfLX-ZzOPk4xCS5d0oSpUsqUFGXoCxe8L25m-p4Wp73urMUIkt_5CAiWDYBTO1lZBDMC5LpF9NRVgu7TMGGV-Lfgwry-CSfp7bIvP-gmZjCMdv3rpEKc9NpXVQn7iKcKyxHGdwI6SOi_odx_MHqXNymNSk2WO9pwljhN1etn2CSCEqezhg_9n4WvNpUOlQn5wCLLjb6AdDN-s5WEcCHUCQwTpqLTq6--7Qlwvdv7zo9Zm5-4xCtrgRF63-H6pqKd5o0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<h4 class="text-2xl font-headline font-bold mb-2">Structural Integrity Audit</h4>
+<p class="text-on-surface-variant max-w-md">Detailed assessment of foundations, load-bearing walls, and roof trusses using non-destructive testing.</p>
+</div>
+</div>
+<!-- Bento Item 2: MEP -->
+<div class="md:col-span-5 bg-surface-container-high rounded-2xl p-10 flex flex-col justify-center border-l-2 border-primary/20">
+<span class="material-symbols-outlined text-primary mb-4" style="font-variation-settings: 'FILL' 1;">electric_bolt</span>
+<h4 class="text-2xl font-headline font-bold mb-4">MEP Systems Analysis</h4>
+<p class="text-on-surface-variant mb-6">A full sweep of mechanical, electrical, and plumbing systems. We find the fire hazards and flood risks before they find you.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm text-on-surface"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Load Balance Testing</li>
+<li class="flex items-center gap-3 text-sm text-on-surface"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Piping Pressure Checks</li>
+<li class="flex items-center gap-3 text-sm text-on-surface"><span class="w-1.5 h-1.5 bg-primary rounded-full"></span> Thermal Imaging Reports</li>
+</ul>
+</div>
+<!-- Bento Item 3: Diaspora -->
+<div class="md:col-span-5 bg-primary-container/10 border border-primary/10 rounded-2xl p-10 flex flex-col items-start gap-4">
+<span class="material-symbols-outlined text-primary text-4xl">public</span>
+<h4 class="text-2xl font-headline font-bold">Diaspora Peace of Mind</h4>
+<p class="text-on-surface-variant">Buying from London, Houston, or Dubai? We are your eyes on the ground. Full HD video walkthroughs and 100-point audit reports delivered digitally.</p>
+</div>
+<!-- Bento Item 4: Legal -->
+<div class="md:col-span-7 bg-surface-container-highest rounded-2xl overflow-hidden relative group p-10 flex flex-col justify-center">
+<img class="absolute inset-0 w-full h-full object-cover opacity-20" data-alt="professional document signing ceremony with gold pen and high quality paper textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ5mrGiQ9MjcCuaYt83TNrbGGjkkhjbnDlLv1TqmjEZTdkuayQ6F37E5GY8ot4edSuV4YXuU5YdtII2WPZqvueoutX4mDJnJcEPgjZyIbtCp_9kaEUdX0pFFmShNjLRogEPxILzEz0EPkln8zvS2KDClPGNxRYUSL6hawxPGU91ILcDoQexbPItAS6gFAL7i91rlskyolkIOTUZZ5Xff8DpU2yXpMBXt6IhvRpICuch4Exq9tYpKgRBW_GfFCjmuf_pU9PTvP8vxk"/>
+<div class="relative z-10">
+<h4 class="text-2xl font-headline font-bold mb-2 text-primary">Compliance &amp; Documentation</h4>
+<p class="text-on-surface-variant max-w-xl">We verify building permits, certificates of occupancy, and approved architectural plans against the physical structure.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section -->
+<section class="bg-surface-container-lowest py-32">
+<div class="container mx-auto px-8">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1">
+<img class="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" data-alt="two professionals in business attire shaking hands firmly in front of a contemporary nigerian skyscraper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgchyxLebLWlHfZ0FwEEfbSRdYuYYrnq6XrqJC5tU0oJCGrba5t0QRx2VOFCEP8mD2gg3T94m0NlMkCHCN691Ed95e6YLYO0tl0YnV9tKH9QfW1Xre9ePrlwOJK5Vyli8mNEZk3ZtcZ_w_4z1xeA4goLGWQmIRXEwbVS905nWnMj7pZ-fpuow26qthd8ICv-TywJTjrs5LU4i3AR92HUBz9U4odoyVujMfxSLnutCXZ0LR6pHNGLV7MKoJARsQlyvo-ILCgvn7bjg"/>
+</div>
+<div class="flex-1">
+<h2 class="text-4xl font-headline font-extrabold mb-6 leading-tight">Nigeria's Most Trusted Verification Partner.</h2>
+<p class="text-on-surface-variant text-lg mb-8 leading-relaxed">
+                            Founded by veterans of the Nigerian construction and legal landscape, HINL was born from a simple observation: property buyers in Nigeria are often left in the dark about the true state of their investments.
+                        </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="bg-primary/10 p-3 rounded h-fit">
+<span class="material-symbols-outlined text-primary">verified</span>
+</div>
+<div>
+<h5 class="font-bold text-lg">ISO 9001 Certified Processes</h5>
+<p class="text-on-surface-variant text-sm">Every report undergoes a dual-reviewer quality check before release.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="bg-primary/10 p-3 rounded h-fit">
+<span class="material-symbols-outlined text-primary">gavel</span>
+</div>
+<div>
+<h5 class="font-bold text-lg">Indisputable Evidence</h5>
+<p class="text-on-surface-variant text-sm">Our reports are admissible in court and used by major banks for collateral valuation.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-8">
+<div class="bg-surface-container-low rounded-[2rem] p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[20rem]">home_pin</span>
+</div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold mb-8">Ready to Secure Your Investment?</h2>
+<p class="text-xl text-on-surface-variant mb-12">Stop guessing. Start knowing. Schedule your comprehensive property audit today.</p>
+<button class="bg-primary text-on-primary px-12 py-6 rounded-lg font-headline font-black text-xl hover:scale-105 active:scale-95 transition-all shadow-[0_15px_30px_rgba(101,179,46,0.3)]">
+                        Book Your Inspection Now
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#121415] w-full py-12 border-t border-outline/10">
+<div class="flex flex-col items-center gap-6 px-8 max-w-6xl mx-auto">
+<div class="flex items-center gap-2 mb-4">
+<span class="text-2xl font-black tracking-tighter text-[#65B32E]">HINL</span>
+</div>
+<div class="flex flex-wrap justify-center gap-8 text-[#8e9289] font-['Inter'] text-sm">
+<a class="hover:text-[#65B32E] transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-[#65B32E] transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-[#65B32E] transition-colors" href="#">Contact Expert</a>
+</div>
+<p class="font-['Inter'] text-xs text-[#8e9289] text-center mt-4">
+                © 2024 Home Inspection Nigeria Limited. Architectural Precision.
+            </p>
+</div>
+</footer>
+</body></html>
