@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Icon from "@/components/Icon";
+import { CONTACT_NUMBER } from "@/lib/contact";
 
 const serviceGroups = [
   {
@@ -56,8 +57,6 @@ const field =
 const label =
   "text-xs font-bold uppercase tracking-wider text-on-surface-variant group-focus-within:text-primary transition-colors";
 
-const WHATSAPP_NUMBER = "2347082980999";
-
 export default function BookingForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading,   setLoading]   = useState(false);
@@ -91,7 +90,7 @@ export default function BookingForm() {
       addonsSelected.length ? `*Add-Ons:* ${addonsSelected.join(", ")}` : null,
     ].filter(Boolean).join("\n");
 
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines)}`;
+    const url = `https://wa.me/${CONTACT_NUMBER}?text=${encodeURIComponent(lines)}`;
     window.open(url, "_blank");
     setSubmitted(true);
     setLoading(false);

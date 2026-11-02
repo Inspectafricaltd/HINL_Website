@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Icon from "@/components/Icon";
+import { CONTACT_NUMBER_DISPLAY } from "@/lib/contact";
 
 const IMG = {
   hero: "/random-images/HINL-PP7.png",
@@ -585,7 +586,7 @@ export default function Home() {
                   <Icon name="call" className="text-primary" />
                 </div>
                 <span className="text-on-surface font-medium text-sm">
-                  +234 708 298 0999
+                  {CONTACT_NUMBER_DISPLAY}
                 </span>
               </div>
               <div className="flex flex-col items-center gap-2 text-center">

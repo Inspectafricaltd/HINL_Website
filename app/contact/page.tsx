@@ -5,6 +5,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Icon from "@/components/Icon";
+import { CONTACT_NUMBER, CONTACT_NUMBER_DISPLAY_LONG } from "@/lib/contact";
 
 const contactMethods = [
   {
@@ -16,8 +17,8 @@ const contactMethods = [
   {
     icon: "call",
     label: "Phone / WhatsApp",
-    value: "+234 (0) 708 298 0999",
-    href: "tel:+2347082980999",
+    value: CONTACT_NUMBER_DISPLAY_LONG,
+    href: `tel:+${CONTACT_NUMBER}`,
   },
   {
     icon: "language",

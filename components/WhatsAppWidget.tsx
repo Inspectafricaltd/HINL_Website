@@ -1,9 +1,11 @@
 "use client";
 
+import { CONTACT_NUMBER } from "@/lib/contact";
+
 export default function WhatsAppWidget() {
   return (
     <a
-      href="https://wa.me/2347082980999?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20an%20HINL%20property%20inspection."
+      href={`https://wa.me/${CONTACT_NUMBER}?text=Hello%2C%20I%27d%20like%20to%20enquire%20about%20an%20HINL%20property%20inspection.`}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with HINL on WhatsApp"
